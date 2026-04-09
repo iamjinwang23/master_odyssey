@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.28 24.43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231815;
+        font-family: Optima-Bold, Optima;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: -.11em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_1-2" data-name="레이어 1">
+    <text class="cls-1" transform="translate(0 18.54)"><tspan class="cls-3" x="0" y="0">MASTER O</tspan><tspan class="cls-2" x="99.31" y="0">D</tspan><tspan class="cls-3" x="113.92" y="0">YSSEY</tspan></text>
+  </g>
+</svg>

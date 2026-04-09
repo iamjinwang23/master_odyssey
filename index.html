@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>2027 교토 마라톤 투어 - 마스터 오디세이</title>
+  <meta name="description" content="오영환 마스터와 함께하는 짐 이동 없는 완벽한 베이스캠프! 극강의 가성비와 4성급 대욕장 리커버리를 갖춘 실속형 프리미엄 투어">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700&family=Outfit:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Phosphor Icons for elegant scalable icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+  <!-- GNB (Global Navigation Bar) -->
+  <nav class="gnb" id="gnb">
+    <a href="#hero" class="gnb-logo"><img src="./img/logo.svg" alt="Master Odyssey"></a>
+    <ul class="gnb-links" id="desktopMenu">
+      <li><a href="#hero">홈</a></li>
+      <li><a href="#overview">투어 개요</a></li>
+      <li><a href="#schedule">상세 일정</a></li>
+      <li><a href="#info">안내사항</a></li>
+    </ul>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">
+      <i class="ph ph-list"></i>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuDrawer">
+    <div class="mobile-menu-content">
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="메뉴 닫기">
+        <i class="ph ph-x"></i>
+      </button>
+      <div class="mobile-menu-header">
+        <img src="./img/logo.svg" alt="Master Odyssey"
+          style="height: 28px; object-fit: contain; padding-top: 10px; opacity: 0.5;">
+      </div>
+      <ul class="mobile-links">
+        <li><a href="#hero" class="mobile-link">홈</a></li>
+        <li><a href="#overview" class="mobile-link">투어 개요</a></li>
+        <li><a href="#schedule" class="mobile-link">상세 일정</a></li>
+        <li><a href="#info" class="mobile-link">안내사항</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section glass-container">
+    <div class="hero-content">
+      <div class="hero-badge">3박 4일 프리미엄 투어</div>
+      <h1 class="hero-title">Master Odyssey<br> 교토 마라톤 투어 2027</h1>
+      <p class="hero-subtitle">가족과 선수가 함께하는 완벽한 여행</p>
+      <div class="hero-dates">
+        <i class="ph ph-calendar-blank"></i> 2027.02.19 (금) - 2027. 02.22 (월)
+      </div><br>
+      <a href="#schedule" class="btn-primary">전체 상세 일정 확인하기 ↓</a>
+    </div>
+  </section>
+
+  <!-- Overview / Infographic Section -->
+  <section id="overview" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">투어 핵심 포인트</h2>
+      <p class="section-desc">짐 이동 없는 완벽한 베이스캠프, 3성급 대욕장 리커버리를 갖춘 실속형 프리미엄 투어</p>
+
+      <div class="infographic-grid">
+        <div class="info-card fade-up">
+          <div class="icon-wrap"><i class="ph ph-airplane-tilt"></i></div>
+          <h3>편안한 국적기</h3>
+          <p>티웨이항공<br><strong>08:00 출국 / 20:30 귀국</strong></p>
+        </div>
+        <div class="info-card fade-up">
+          <div class="icon-wrap"><i class="ph ph-buildings"></i></div>
+          <h3>3성급 프리미엄 숙박</h3>
+          <p>온야도 노노 교토 시치조 내추럴 핫 스프링<br><strong>짐 이동 없는 3연박</strong></p>
+        </div>
+        <div class="info-card fade-up">
+          <div class="icon-wrap"><i class="ph ph-drop"></i></div>
+          <h3>대욕장 리커버리</h3>
+          <p>레이스 후 피로를 씻는<br><strong>천연 온천욕 완비</strong></p>
+        </div>
+        <div class="info-card fade-up">
+          <div class="icon-wrap"><i class="ph ph-person-simple-walk"></i></div>
+          <h3>최고의 가이드 라인</h3>
+          <p>오영환 마스터 코치<br><strong>러너와 가족 맞춤형 동행</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Basecamp / Hotel Section -->
+  <section id="basecamp" class="section bg-light" style="border-bottom: 1px solid #e5e5e5; padding-top:40px;">
+    <div class="container">
+      <div class="schedule-header">
+        <h2 class="section-title">우리의 베이스캠프: 온야도 노노 교토 시치조</h2>
+        <p class="section-desc mb-4">컨디션 관리에 집중할 수 있도록, 짐 이동 없는 최상위 등급 3연박이 준비되어 있습니다.</p>
+      </div>
+
+      <div class="hotel-grid">
+        <!-- Info Side (Left) -->
+        <div class="hotel-info fade-up">
+          <div class="hotel-carousel-container" id="hotelCarousel">
+            <div class="carousel-track" id="hotelTrack">
+              <img src="./img/hotel-main.jpg" alt="온야도 노노 교토 전경" class="carousel-img">
+              <img src="./img/hotel-room.jpg" alt="다다미 객실" class="carousel-img">
+              <img src="./img/hotel-bath.jpg" alt="천연 온천 대욕장" class="carousel-img">
+              <img src="./img/hotel-dining.jpg" alt="레스토랑" class="carousel-img">
+              <img src="./img/hotel-lounge.jpg" alt="프리미엄 라운지" class="carousel-img">
+            </div>
+            <button class="carousel-btn prev-btn" aria-label="이전 사진"><i class="ph ph-caret-left"></i></button>
+            <button class="carousel-btn next-btn" aria-label="다음 사진"><i class="ph ph-caret-right"></i></button>
+            <div class="carousel-dots">
+              <div class="dot active" data-index="0"></div>
+              <div class="dot" data-index="1"></div>
+              <div class="dot" data-index="2"></div>
+              <div class="dot" data-index="3"></div>
+              <div class="dot" data-index="4"></div>
+            </div>
+          </div>
+          <h3 style="font-size: 1.8rem; margin-bottom: 12px; font-weight: 700; color: var(--text-main);">온야도 노노 교토 시치조
+            (Onyado Nono)</h3>
+          <p class="hotel-desc text-muted mb-4" style="line-height: 1.6; margin-bottom: 24px;">교토역 도보 7분 거리의 프리미엄 온천
+            호텔입니다. 전관 다다미 바닥으로 맨발의 편안함을 선사하며, 천연 온천 대욕장 '연화의 탕'에서 마라톤 후 완벽한 냉온욕 리커버리를 경험할 수 있습니다.</p>
+          <a href="https://dormy-hotels.com/dormyinn/hotels/nono_kyoto/" target="_blank" class="btn-primary"
+            style="border-radius: var(--radius-sm); margin-bottom: var(--space-xl);">호텔 객실 및 부대시설 둘러보기 →</a>
+
+          <div style="height: 1px; background: var(--glass-border); margin: var(--space-lg) 0;"></div>
+
+          <h4 style="font-size: 1.25rem; font-weight: 700; margin-bottom: var(--space-md); color: var(--text-main);">
+            주변 명소 (반경 1km 조깅 & 인프라)</h4>
+          <ul class="nearby-list">
+            <li>
+              <div class="list-icon"><i class="ph ph-sneaker"></i></div>
+              <div class="list-text"><strong>가모강변 (시치조 대교)</strong><span>도보 5분 / 아침을 깨우는 탁 트인 러닝 코스</span></div>
+            </li>
+            <li>
+              <div class="list-icon"><i class="ph ph-buildings"></i></div>
+              <div class="list-text"><strong>교토역 & 교토 타워</strong><span>도보 7분 / 교통의 중심이자 쇼핑 및 맛집의 메카</span></div>
+            </li>
+            <li>
+              <div class="list-icon"><i class="ph ph-tree"></i></div>
+              <div class="list-text"><strong>히가시혼간지</strong><span>도보 5분 / 웅장한 목조 건축물이 있는 힐링 산책로</span></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Map Side (Right, Sticky) -->
+        <div class="hotel-map-wrap glassmorphism fade-up">
+          <div id="hotel-map" style="width: 100%; height: 500px; border-radius: var(--radius-lg) var(--radius-lg) 0 0;">
+            <div style="padding: 100px; text-align:center; color: var(--text-muted);"><i
+                class="ph ph-circle-notch ph-spin" style="font-size:2rem; margin-bottom:10px; display:block;"></i> 지도
+              로딩중...</div>
+          </div>
+          <div class="hotel-map-legend">
+            <span><span
+                style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#FF385C; vertical-align:middle; margin-right:4px;"></span>
+              베이스캠프</span>
+            <span><span
+                style="display:inline-block; width:10px; height:10px; border-radius:50%; background:#222222; vertical-align:middle; margin-right:4px;"></span>
+              주변 명소</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline & Map Section (Dynamic Content based on Toggle) -->
+  <section id="schedule" class="section">
+    <div class="container">
+      <div class="schedule-header">
+        <h2 class="section-title">전체 상세 일정표</h2>
+        <p class="section-desc">각 일자별 일정과 지도를 한눈에 순서대로 확인할 수 있습니다.</p>
+      </div>
+
+      <div class="user-type-switch-container">
+        <div class="switch" role="group" aria-label="참가 유형 선택">
+          <input type="checkbox" id="user-type-toggle">
+          <label for="user-type-toggle">
+            <span class="left">선수 일정</span>
+            <span class="right">가족 일정</span>
+            <div class="slider"></div>
+          </label>
+        </div>
+      </div>
+
+      <div id="full-schedule-container">
+        <!-- JS will inject all days consecutively here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Notice Section -->
+  <section id="info" class="section bg-dark">
+    <div class="container">
+      <h2 class="section-title text-white" style="margin-bottom: 8px;">자주 묻는 질문 / 안내사항</h2>
+      <p class="section-desc mb-4" style="color: rgba(255,255,255,0.6);">안전하고 즐거운 투어를 위해 꼭 알아두셔야 할 필수 정보입니다.</p>
+
+      <div class="faq-list">
+        <details class="faq-item fade-up">
+          <summary>여권 및 현지 결제 수단은 어떻게 준비하나요?</summary>
+          <div class="faq-content">출발일 기준 여권 유효기간이 반드시 6개월 이상 남아있어야 합니다. 현지는 카드가 불가능한 소규모 식당이 많으므로 넉넉한 일본 엔화(JPY) 현찰 지참을
+            권장드리며, 서브 결제 수단으로 트래블월렛 카드를 추천합니다.</div>
+        </details>
+        <details class="faq-item fade-up">
+          <summary>교토의 3월 날씨와 추천 복장은 어떤가요?</summary>
+          <div class="faq-content">교토의 3월 평균 기온은 8~16°C로 쾌적하지만 아침저녁으로 일교차가 큽니다. 두꺼운 외투 하나보다는 가벼운 패딩이나 탈착하기 편한 레이어링
+            복장(플리스, 바람막이)을 겹쳐 입는 것을 권장합니다.</div>
+        </details>
+        <details class="faq-item fade-up">
+          <summary>대회 당일 장거리 이동과 짐 보관은 어떻게 하나요?</summary>
+          <div class="faq-content">최정상급 온야도 노노 교토 시치조 호텔에서 3연박을 진행하므로, 귀국일까지 매번 짐을 싸고 푸는 불편함이 없습니다. 당일 레이스 시 최소한의 필수품만
+            챙겨 나가시면 됩니다.</div>
+        </details>
+        <details class="faq-item fade-up">
+          <summary>가족과 선수의 일정이 구체적으로 언제 나뉘나요?</summary>
+          <div class="faq-content">입국 첫날(Day 1)의 환영 만찬과 완주 축하 파티(Day 3 저녁)를 제외하고 대부분의 낮 동선은 독립적으로 진행됩니다. 화면 상단의 '가족 일정 /
+            선수 일정' 스마트 토글 버튼을 누르시면 실시간으로 각자의 맞춤형 동선을 확인하실 수 있습니다.</div>
+        </details>
+        <details class="faq-item fade-up">
+          <summary>현지에 비상상황이 발생하면 어떻게 연락하나요?</summary>
+          <div class="faq-content">화면 우측 하단에 항상 떠 있는 <i class="ph ph-phone-call"></i> 전화 아이콘을 탭하시면 투어를 전담하는 오영환
+            마스터(010-XXXX-XXXX)에게 직통으로 SOS 연결이 가능합니다. (보조 현지 가이드: +81-XXX-XXXX-XXXX)</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark" style="border-top: 1px solid rgba(255,255,255,0.1); padding: 40px 20px;">
+    <div class="container" style="display: flex; flex-direction: column; align-items: flex-start; text-align: left;">
+      <img src="./img/logo.svg" alt="Master Odyssey" height="28"
+        style="filter: brightness(0) invert(1); margin-bottom: 16px;">
+      <p style="font-size: 1rem; color: rgba(255,255,255,0.6); margin-bottom: 40px;">럭셔리 투어의 새로운 기준을 제시합니다.</p>
+      <p style="font-size: 0.85rem; color: rgba(255,255,255,0.3); margin-top: auto;">&copy; 2026 Master Odyssey. All
+        rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Call Button (Emergency/Master Contact) -->
+  <a href="tel:01000000000" class="floating-call-btn" title="오영환 마스터 긴급 연락">
+    <i class="ph ph-phone-call"></i>
+  </a>
+
+  <script src="env.js"></script>
+  <script src="app.js"></script>
+  <!-- Load Google Maps API safely with ENV support -->
+  <script>
+    function loadGoogleMaps() {
+      // env.js 파일에서 키를 읽어옵니다.
+      const apiKey = (window.ENV && window.ENV.GOOGLE_MAPS_API_KEY && window.ENV.GOOGLE_MAPS_API_KEY !== "YOUR_API_KEY_HERE")
+        ? window.ENV.GOOGLE_MAPS_API_KEY
+        : "";
+
+      const keyParam = apiKey ? `key=${apiKey}&` : "";
+      const script = document.createElement('script');
+      script.src = `https://maps.googleapis.com/maps/api/js?${keyParam}callback=initMaps&libraries=places`;
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+    window.onload = loadGoogleMaps;
+  </script>
+</body>
+
+</html>
